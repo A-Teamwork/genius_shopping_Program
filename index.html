@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genius Shopping Program</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;300;500;700&family=Lalezar&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-bar">
+        <div class="brand">
+          <img
+            src="assets/images/logo (1).png"
+            alt="Genius Shopping Program logo"
+            class="brand-logo"
+          />
+        </div>
+        <button class="help-btn" type="button" aria-controls="faq-modal">
+          <span aria-hidden="true">?</span>
+          <span class="sr-only">Abrir preguntas frecuentes</span>
+        </button>
+      </div>
+    </header>
+
+    <div class="modal" id="faq-modal" aria-hidden="true" role="dialog" aria-labelledby="faq-title">
+      <div class="modal-content" role="document">
+        <button class="modal-close" type="button" aria-label="Close FAQ">×</button>
+        <h2 id="faq-title">Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>WHAT ARE THE PARTICIPATION REQUIREMENTS?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>You must be over 18 years old and live in the US.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>WHAT CAN I GET FROM THIS PROGRAM?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                By signing up for our exclusive Program, you can receive a $750 Walmart gift card,
+                which can be spent on a variety of products, from fresh food to essential items at Walmart.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>WHAT HAPPENS IF I APPLY WITHOUT MEETING THE REQUIREMENTS?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                Our team reviews applications daily. Applicants who do not meet the requirements will not be accepted,
+                but we will reach out to them as soon as they become eligible to participate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-overlay"></div>
+    </div>
+
+    <div class="page">
+      <main>
+      <section class="hero">
+        <h1 class="page-title">
+          Exciting news! If regularly shop at Walmart, you can get a $750 Walmart Gift Card For Free!
+        </h1>
+        <p>
+          We are helping people by making their life easier with an exclusive
+          <span class="highlight-pill">$750 Walmart gift card</span>. Enjoy fantastic savings on your favorite items, and ease your worries!
+        </p>
+        <p class="hero-secondary">
+          Are you prepared to make your life easier with a $750 Walmart Gift Card? Click on the
+          <span class="highlight-pill inline-start">START</span> button below.
+        </p>
+        <img
+          class="hero-image"
+          src="assets/images/image.png"
+          alt="$750 Walmart gift card"
+        />
+      </section>
+      <div class="sticky-cta" id="cta-stick">
+        <button class="primary sticky-start">START</button>
+      </div>
+
+      <section class="feed">
+        <div class="feed-header">
+          <div>
+            <h2>Read what others say about our program:</h2>
+            <p class="comment-count">130 comments</p>
+          </div>
+          <label class="sort">
+            <span>Sort by</span>
+            <select>
+              <option value="recent" selected>Newest</option>
+              <option value="popular">Most helpful</option>
+            </select>
+          </label>
+        </div>
+        <div class="comment-box">
+          <div class="comment-box__inner">
+            <div class="comment-avatar" aria-hidden="true"></div>
+            <textarea
+              class="comment-input"
+              placeholder="Add a comment..."
+              aria-label="Add a comment"
+            ></textarea>
+          </div>
+          <div class="comment-box__actions">
+            <label class="comment-checkbox">
+              <input type="checkbox" />
+              <span>Also post on Facebook</span>
+            </label>
+            <button type="button" class="comment-submit">Sign up to post</button>
+          </div>
+        </div>
+
+        <article class="comment">
+          <img
+            class="avatar"
+            src="assets/images/1.jpg"
+            alt="Michael"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>Michael Turner</h3>
+              </div>
+            </header>
+            <p>
+              Just finished my Walmart shopping trip with the gift card! Got so many groceries can't believe it:
+            </p>
+            <img
+              class="comment-photo"
+              src="assets/images/test7.jpg"
+              alt="Groceries"
+            />
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">1 ·</span>
+              <span>a week ago</span>
+            </footer>
+          </div>
+        </article>
+
+        <article class="comment">
+          <img
+            class="avatar"
+            src="/assets/images/2.jpg"
+            alt="Sonia"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>Sarah Wilson</h3>
+              </div>
+            </header>
+            <p>
+              Hoping to get selected for the next round of Walmart gift cards! The deals look amazing right now
+            </p>
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">1 ·</span>
+              <span>a week ago</span>
+            </footer>
+          </div>
+        </article>
+
+        <article class="comment">
+          <img
+            class="avatar"
+            src="/assets/images/3.jpg"
+            alt="Renee"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>David Anderson</h3>
+              </div>
+            </header>
+            <p>
+              Stocked up on everything I needed. Many thanks to the whole Genius Shopping Program team:
+            </p>
+            <img
+              class="comment-photo"
+              src="/assets/images/test1.jpg"
+              alt="BBQ groceries"
+            />
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">3 ·</span>
+              <span> a week ago</span>
+            </footer>
+            <div class="comment-replies">
+              <div class="reply">
+                <img
+                  class="reply-avatar"
+                  src="assets/images/brand.jpg"
+                  alt="Genius Shopping Program"
+                />
+                <div class="reply-body">
+                  <h4>Genius Shopping Program</h4>
+                  <p>That's wonderful, David! Glad you could get everything you needed!</p>
+                  <div class="comment-meta reply-meta">
+                    <button>Like ·</button>
+                    <button>Reply ·</button>
+                    <span class="total-likes" aria-hidden="true"></span>
+                    <span class="like-count">16 ·</span>
+                    <span>a week ago</span>
+                  </div>
+                </div>
+              </div>
+              <div class="reply">
+                <img
+                  class="reply-avatar"
+                  src="/assets/images/3.jpg"
+                  alt="David Anderson"
+                />
+                <div class="reply-body">
+                  <h4>David Anderson</h4>
+                  <p>Much appreciated!</p>
+                  <div class="comment-meta reply-meta">
+                    <button>Like ·</button>
+                    <button>Reply ·</button>
+                    <span class="total-likes" aria-hidden="true"></span>
+                    <span class="like-count">3 ·</span>
+                    <span>a week ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="comment">
+          <img
+            class="avatar"
+            src="/assets/images/4.jpg"
+            alt="Eloise"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>Jennifer Martinez</h3>
+              </div>
+            </header>
+            <p>
+              It came at the perfect time.. got all my groceries and essentials for the whole family
+            </p>
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">7 ·</span>
+              <span>two weeks ago</span>
+            </footer>
+          </div>
+        </article>
+
+        <article class="comment">
+          <img
+            class="avatar"
+            src="/assets/images/5.jpg"
+            alt="Emily"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>Emily Thompson</h3>
+              </div>
+            </header>
+            <p>
+             Look at this! This gift card was such a blessing, very grateful for this opportunity:
+            </p>
+            <img
+              class="comment-photo"
+              src="/assets/images/test6.jpg"
+              alt="Walmart pickup"
+            />
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">7 ·</span>
+              <span>two weeks ago</span>
+            </footer>
+            <div class="comment-replies">
+              <div class="reply">
+                <img
+                  class="reply-avatar"
+                  src="assets/images/brand.jpg"
+                  alt="Genius Shopping Program"
+                />
+                <div class="reply-body">
+                  <h4>Genius Shopping Program</h4>
+                  <p>That's what we love to see, Emily! Happy shopping!</p>
+                  <div class="comment-meta reply-meta">
+                    <button>Like ·</button>
+                    <button>Reply ·</button>
+                    <span class="total-likes" aria-hidden="true"></span>
+                    <span class="like-count">25 ·</span>
+                    <span>two weeks ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="comment comment--extra comment--hidden">
+          <img
+            class="avatar"
+            src="assets/images/10.jpg"
+            alt="Jessica Baker"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>Jessica Baker</h3>
+              </div>
+            </header>
+            <p>
+              Managed to buy so many things, the prices are unbeatable. I'm a big faaaan of this store
+            </p>
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">8 ·</span>
+              <span>two weeks ago</span>
+            </footer>
+          </div>
+        </article>
+
+        <article class="comment comment--extra comment--hidden">
+          <img
+            class="avatar"
+            src="assets/images/11.jpg"
+            alt="Liam Carter"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>William Carter</h3>
+              </div>
+            </header>
+            <p>
+              First time getting a gift card from this Program and I'm impressed! Made my monthly shopping so much easier:
+            </p>
+            <img
+              class="comment-photo"
+              src="assets/images/test2.jpg"
+              alt="Walmart pickup"
+            />
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">3 ·</span>
+              <span>two weeks ago</span>
+            </footer>
+            <div class="comment-replies">
+              <div class="reply">
+                <img
+                  class="reply-avatar"
+                  src="assets/images/brand.jpg"
+                  alt="Genius Shopping Program"
+                />
+                <div class="reply-body">
+                  <h4>Genius Shopping Program</h4>
+                  <p>We're happy to hear about your positive experience, William!</p>
+                  <div class="comment-meta reply-meta">
+                    <button>Like ·</button>
+                    <button>Reply ·</button>
+                    <span class="total-likes" aria-hidden="true"></span>
+                    <span class="like-count">56 ·</span>
+                    <span>two weeks ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="comment comment--extra comment--hidden">
+          <img
+            class="avatar"
+            src="assets/images/12.jpg"
+            alt="Christopher Davis"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>Christopher Davis</h3>
+              </div>
+            </header>
+            <p>
+              This program is amazing! Saved me a lot on my shopping budget. Thank you guys
+            </p>
+            <img
+              class="comment-photo"
+              src="assets/images/test5.jpg"
+              alt="Walmart pickup"
+            />
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">12 ·</span>
+              <span> two weeks ago</span>
+            </footer>
+          </div>
+        </article>
+
+        <article class="comment comment--extra comment--hidden">
+          <img
+            class="avatar"
+            src="assets/images/13.jpg"
+            alt="Lauren Rodriguez"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>Lauren Rodriguez</h3>
+              </div>
+            </header>
+            <p>
+              My friend just showed me her shopping haul from this program. Can't wait for the next round of applications
+            </p>
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">3 ·</span>
+              <span>two weeks ago</span>
+            </footer>
+          </div>
+        </article>
+
+        <article class="comment comment--extra comment--hidden">
+          <img
+            class="avatar"
+            src="assets/images/14.jpg"
+            alt="Robert Johnson"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>Robert Johnson</h3>
+              </div>
+            </header>
+            <p>
+              Perfect timing with these rising prices. The gift card helped us a lot!! Very thankful
+            </p>
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">1 ·</span>
+              <span>two weeks ago</span>
+            </footer>
+          </div>
+        </article>
+
+        <article class="comment comment--extra comment--hidden">
+          <img
+            class="avatar"
+            src="assets/images/15.jpg"
+            alt="Daniel White"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>Daniel White</h3>
+              </div>
+            </header>
+            <p>
+              Never thought I'd get selected but here we are! Take a look at today's shopping trip results:
+            </p>
+              <img
+                class="comment-photo"
+                src="assets/images/test3.jpg"
+                alt="Walmart pickup"
+              />
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">1 ·</span>
+              <span>two weeks ago</span>
+            </footer>
+          </div>
+        </article>
+
+        <article class="comment comment--extra comment--hidden">
+          <img
+            class="avatar"
+            src="assets/images/20.jpg"
+            alt="Michelle Scott"
+          />
+          <div class="comment-body">
+            <header>
+              <div>
+                <h3>Michelle Scott</h3>
+              </div>
+            </header>
+            <p>
+              Been wanting to do some big shoppings for a while. This gift card made it possible haha
+            </p>
+            <img
+              class="comment-photo"
+              src="assets/images/test4.jpg"
+              alt="Walmart pickup"
+            />
+            <footer class="comment-meta">
+              <button>Like ·</button>
+              <button>Reply ·</button>
+              <span class="total-likes" aria-hidden="true"></span>
+              <span class="like-count">6 ·</span>
+              <span>two weeks ago</span>
+            </footer>
+          </div>
+        </article>
+
+        <div class="load-more">
+          <button class="load-more-btn">Load 5 more comments</button>
+          <hr class="fb-divider" />
+          <div class="comments-footer">
+            <a
+              class="fb-plugin-note"
+              href="https://developers.facebook.com/products/social-plugins/comments/?utm_campaign=social_plugins&utm_medium=offsite_pages&utm_source=comments_plugin"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true">
+                <path
+                  fill="#2563eb"
+                  d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+                ></path>
+              </svg>
+              <span>Facebook Comments Plugin</span>
+            </a>
+          </div>
+          <hr class="fb-divider" />
+      </section>
+
+      <section class="legal-links">
+        <div class="legal-heading">
+          <img src="assets/images/links-image.png" alt="Legal" />
+          <p class="links-image-text">LEGAL LINKS</p>
+        </div>
+        <div class="legal-nav">
+          <a href="terms.html">Terms and Conditions</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="non-affiliation.html">Non-Affiliation Disclaimer</a>
+        </div>
+        <p class="legal-text">
+          Trade names or rights associated with all trademarks on this website are the property of their
+          respective owners and are not associated with this promotion. This offer ends at the end of 2025.
+        </p>
+        <p class="legal-text">
+          This website is not part of the Facebook website or of Facebook Inc. Furthermore, this website is
+          not endorsed in any way by Facebook. Facebook is a trademark of Facebook, Inc.
+        </p>
+        <p class="legal-footnote">
+          <span>© 21/2025 — <strong>Genius Shopping Program.</strong> All rights reserved.</span>
+          <img src="assets/images/logo-small.png" alt="Genius Shopping Program" />
+        </p>
+      </section>
+    </main>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
