@@ -309,6 +309,10 @@ main {
   padding-bottom: 40px;
 }
 
+.sticky-cta a {
+  text-decoration: none;
+}
+
 .sticky-cta.cta-fixed {
   position: relative;
   left: 50%;
@@ -318,6 +322,9 @@ main {
 }
 
 .sticky-start {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   border-radius: 15px;
   background: linear-gradient(45deg, #0043b6, #0d66ff);
